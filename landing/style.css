@@ -702,7 +702,7 @@ body {
   gap: 64px;
   margin-bottom: 48px;
 }
-.footer-brand { display: flex; flex-direction: column; gap: 12px; }
+.footer-brand { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
 .footer-logo { height: 28px; width: auto; margin-bottom: 4px; }
 .footer-brand p { color: var(--muted); font-size: 14px; line-height: 1.6; }
 .footer-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
