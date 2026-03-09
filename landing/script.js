@@ -100,7 +100,7 @@ const statObserver = new IntersectionObserver(entries => {
     if (entry.isIntersecting) {
       const el = entry.target;
       const text = el.textContent.trim();
-      if (text.endsWith('km')) animateCounter(el, 10, 'km');
+      if (text.endsWith('km')) animateCounter(el, 1, 'km');
       else if (text.endsWith('%')) animateCounter(el, 100, '%');
       statObserver.unobserve(el);
     }
