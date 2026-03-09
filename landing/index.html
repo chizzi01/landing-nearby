@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nearby — Conectá con personas reales, cerca tuyo</title>
+  <meta name="description" content="Nearby es la app que te conecta con personas auténticas que están físicamente cerca de vos. Radar en tiempo real, matches genuinos, conexiones que empiezan en el mundo real." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── NAV ─── -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="images/logo.png" alt="Nearby" class="nav-logo-img" />
+      </a>
+      <div class="nav-links">
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#features">Funciones</a>
+        <a href="#descargar" class="btn btn-sm">Descargar</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="radar-ring r1"></div>
+      <div class="radar-ring r2"></div>
+      <div class="radar-ring r3"></div>
+      <div class="radar-sweep"></div>
+      <div class="hero-dots">
+        <span class="dot d1"></span>
+        <span class="dot d2"></span>
+        <span class="dot d3"></span>
+        <span class="dot d4"></span>
+        <span class="dot d5"></span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          Conexiones en tiempo real
+        </div>
+        <h1 class="hero-title">
+          El amor está<br />
+          <span class="gradient-text">más cerca</span><br />
+          de lo que creés
+        </h1>
+        <p class="hero-subtitle">
+          Nearby usa un radar inteligente para mostrar personas afines que están físicamente cerca tuyo, en este momento. Nada de match con alguien a 500km. Solo conexiones reales.
+        </p>
+        <div class="hero-cta">
+          <a href="#descargar" class="btn btn-primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+            Descargá gratis
+          </a>
+          <a href="#como-funciona" class="btn btn-ghost">
+            Ver cómo funciona
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">10km</span>
+            <span class="stat-label">Radio máximo</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Gratuito</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">Real</span>
+            <span class="stat-label">Sin bots</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-phone">
+        <div class="phone-frame">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <img src="images/screen-radar.jpg" alt="Radar de Nearby" class="phone-img active" id="heroImg" />
+          </div>
+          <div class="phone-home"></div>
+        </div>
+        <div class="phone-glow"></div>
+        <div class="floating-card card-left">
+          <span class="fc-emoji">📍</span>
+          <div>
+            <div class="fc-name">Martina, 20</div>
+            <div class="fc-dist">350m de vos</div>
+          </div>
+        </div>
+        <div class="floating-card card-right">
+          <span class="fc-emoji">💚</span>
+          <div>
+            <div class="fc-name">¡Match!</div>
+            <div class="fc-dist">conectados ahora</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CÓMO FUNCIONA ─── -->
+  <section class="how-it-works" id="como-funciona">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Simple y directo</span>
+        <h2 class="section-title">Tres pasos para conectar</h2>
+        <p class="section-subtitle">En minutos podés estar viendo quién está cerca tuyo y con ganas de conocerte.</p>
+      </div>
+      <div class="steps">
+        <div class="step" data-aos="fade-up">
+          <div class="step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <div class="step-number">01</div>
+          <h3>Creá tu perfil</h3>
+          <p>Subí fotos reales, contá un poco sobre vos, tus intereses y qué buscás. Sin filtros ridículos, solo vos.</p>
+        </div>
+        <div class="step-arrow">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <div class="step" data-aos="fade-up" data-aos-delay="100">
+          <div class="step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <div class="step-number">02</div>
+          <h3>Activá el radar</h3>
+          <p>Con un toque, el radar escanea tu zona y te muestra quién está activo ahora mismo, a pocos metros de distancia.</p>
+        </div>
+        <div class="step-arrow">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <div class="step" data-aos="fade-up" data-aos-delay="200">
+          <div class="step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div class="step-number">03</div>
+          <h3>Conectá y hablá</h3>
+          <p>Cuando hay match mutuo, se abre el chat. Sin intermediarios ni algoritmos raros. Directo al grano.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FEATURE SCREENS ─── -->
+  <section class="features" id="features">
+    <div class="container">
+
+      <!-- Feature 1 -->
+      <div class="feature-row">
+        <div class="feature-visual">
+          <div class="phone-frame phone-sm">
+            <div class="phone-notch phone-notch-sm"></div>
+            <div class="phone-screen">
+              <img src="images/screen-radar.jpg" alt="Radar en tiempo real" class="phone-img" />
+            </div>
+            <div class="phone-home phone-home-sm"></div>
+          </div>
+          <div class="feature-glow glow-green"></div>
+        </div>
+        <div class="feature-text" data-aos="fade-left">
+          <span class="feature-label">Radar inteligente</span>
+          <h2>Ves quién está activo,<br /><span class="gradient-text">ahora mismo</span></h2>
+          <p>El radar de Nearby actualiza en tiempo real usando sockets. Cada vez que alguien se muestra cerca de vos, aparece en tu pantalla al instante. Sin esperas, sin bots, solo gente real.</p>
+          <ul class="feature-list">
+            <li>
+              <span class="check">✓</span>
+              Radio ajustable hasta 10km
+            </li>
+            <li>
+              <span class="check">✓</span>
+              Actualizaciones en tiempo real vía WebSocket
+            </li>
+            <li>
+              <span class="check">✓</span>
+              Podés ocultarte en cualquier momento
+            </li>
+            <li>
+              <span class="check">✓</span>
+              Gente real cerca tuyo
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="feature-row reverse">
+        <div class="feature-visual">
+          <div class="phone-frame phone-sm">
+            <div class="phone-notch phone-notch-sm"></div>
+            <div class="phone-screen">
+              <img src="images/screen-profile.jpg" alt="Perfil de usuario" class="phone-img" />
+            </div>
+            <div class="phone-home phone-home-sm"></div>
+          </div>
+          <div class="feature-glow glow-teal"></div>
+        </div>
+        <div class="feature-text" data-aos="fade-right">
+          <span class="feature-label">Perfiles auténticos</span>
+          <h2>Personas reales,<br /><span class="gradient-text">no avatares</span></h2>
+          <p>Nearby no tiene bots, no tiene cuentas falsas. Solo personas reales con ubicación verificada. Podés ver fotos reales, intereses en común y cuántos metros te separan.</p>
+          <ul class="feature-list">
+            <li>
+              <span class="check">✓</span>
+              Distancia real al metro
+            </li>
+            <li>
+              <span class="check">✓</span>
+              Intereses en común resaltados
+            </li>
+            <li>
+              <span class="check">✓</span>
+              Perfiles completos y detallados
+            </li>
+            <li>
+              <span class="check">✓</span>
+              Bloqueo y reporte fácil
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="feature-row">
+        <div class="feature-visual">
+          <div class="phone-frame phone-sm">
+            <div class="phone-notch phone-notch-sm"></div>
+            <div class="phone-screen">
+              <img src="images/screen-matches.jpg" alt="Matches y chats" class="phone-img" />
+            </div>
+            <div class="phone-home phone-home-sm"></div>
+          </div>
+          <div class="feature-glow glow-green"></div>
+        </div>
+        <div class="feature-text" data-aos="fade-left">
+          <span class="feature-label">Matches & Chat</span>
+          <h2>Convertí el interés en<br /><span class="gradient-text">una charla real</span></h2>
+          <p>Cuando hay interés mutuo, se crea el chat automáticamente. Mensajes clásicos, fluidos y en tiempo real para que la conexión no se pierda.</p>
+          <ul class="feature-list">
+            <li>
+              <span class="check">✓</span>
+              Chat en tiempo real con notificaciones
+            </li>
+            <li>
+              <span class="check">✓</span>
+              Mensajes directos y honestos
+            </li>
+            <li>
+              <span class="check">✓</span>
+              Notificaciones push instantáneas
+            </li>
+            <li>
+              <span class="check">✓</span>
+              Historial de conversaciones
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="feature-row reverse">
+        <div class="feature-visual">
+          <div class="phone-frame phone-sm">
+            <div class="phone-notch phone-notch-sm"></div>
+            <div class="phone-screen">
+              <img src="images/screen-likes.jpg" alt="Sección de likes" class="phone-img" />
+            </div>
+            <div class="phone-home phone-home-sm"></div>
+          </div>
+          <div class="feature-glow glow-teal"></div>
+        </div>
+        <div class="feature-text" data-aos="fade-right">
+          <span class="feature-label">Descubrí quién te busca</span>
+          <h2>Mirá quién te dio<br /><span class="gradient-text">like primero</span></h2>
+          <p>No pierdas el tiempo adivinando. En la sección de Likes podés ver una lista de todas las personas que mostraron interés en vos, para que el match sea más rápido.</p>
+          <ul class="feature-list">
+            <li>
+              <span class="check">✓</span>
+              Lista detallada de interesados
+            </li>
+            <li>
+              <span class="check">✓</span>
+              Matches directos desde la lista
+            </li>
+            <li>
+              <span class="check">✓</span>
+              Ordenado por los más recientes
+            </li>
+            <li>
+              <span class="check">✓</span>
+              100% transparente
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── TESTIMONIALS ─── -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Lo que dicen</span>
+        <h2 class="section-title">Historias reales de Nearby</h2>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"</div>
+          <p>Lo instalé en el centro comercial y en 5 minutos ya tenía 3 perfiles visibles. Salí a tomar un café con una de esas personas esa misma tarde. Algo que Tinder nunca me dio.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">M</div>
+            <div>
+              <div class="testimonial-name">Mateo, 26</div>
+              <div class="testimonial-city">Buenos Aires</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card featured">
+          <div class="testimonial-quote">"</div>
+          <p>El radar es una locura. Staba en un recital y vi que había dos personas con los mismos intereses que yo a 200 metros. Los mandé un like, matcheamos, y ahora somos amigos. Gratis y sin drama.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">L</div>
+            <div>
+              <div class="testimonial-name">Lucía, 24</div>
+              <div class="testimonial-city">Córdoba</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"</div>
+          <p>Finalmente una app que no te hace pagar para ver quién te dio like. Es honesta, simple y funciona. Nada de algoritmos que te esconden perfiles para que pagues.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">S</div>
+            <div>
+              <div class="testimonial-name">Sebastián, 29</div>
+              <div class="testimonial-city">Rosario</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PRIVACY ─── -->
+  <section class="privacy-section">
+    <div class="container">
+      <div class="privacy-card">
+        <div class="privacy-icon">🔒</div>
+        <h2>Tu privacidad, primero</h2>
+        <p>Nearby solo se activa cuando vos querés. Podés ocultarte en cualquier momento. Nunca compartimos tu ubicación exacta con nadie. Vos decidís cuándo y por cuánto tiempo te mostrás.</p>
+        <div class="privacy-pills">
+          <span class="pill">Solo ubicación aproximada</span>
+          <span class="pill">Visible por tiempo limitado</span>
+          <span class="pill">Datos encriptados</span>
+          <span class="pill">Sin rastreo en segundo plano</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA / DESCARGA ─── -->
+  <section class="download-section" id="descargar">
+    <div class="container">
+      <div class="download-content">
+        <div class="download-radar">
+          <div class="dl-ring r1"></div>
+          <div class="dl-ring r2"></div>
+          <div class="dl-ring r3"></div>
+          <div class="dl-center">
+            <img src="images/logo.png" alt="Nearby" />
+          </div>
+        </div>
+        <div class="download-text">
+          <h2>¿Hay alguien cerca ahora mismo esperándote?</h2>
+          <p>Descargá Nearby gratis y empezá a conectar con personas reales que están a metros de distancia.</p>
+          <div class="download-buttons">
+            <a href="#" class="store-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M3.18 23.76c.27.15.6.18.93.09l12.7-7.34L13.45 12l-10.27 11.76zm16.04-9.31L16 12.6l3.22-1.86c.97-.56.97-2.03 0-2.58L7.5.44c-.33-.19-.7-.24-1.05-.14L16.64 11.4l2.58 2.58zm-14.87-13c-.27.06-.52.2-.7.43L1 5.24v13.52l2.65 4.36c.18.23.43.37.7.43L13.45 12 4.35 1.45zm15.7 8.22-3.1 1.79 3.1 1.79 3.1-1.79-3.1-1.79z"/></svg>
+              <div>
+                <span class="store-sub">Disponible en</span>
+                <span class="store-name">Google Play</span>
+              </div>
+            </a>
+            <a href="#" class="store-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <div>
+                <span class="store-sub">Disponible en</span>
+                <span class="store-name">App Store</span>
+              </div>
+            </a>
+          </div>
+          <p class="download-note">Gratis · Sin tarjeta de crédito · Disponible en Argentina</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="Nearby" class="footer-logo" />
+          <p>Conectá con personas reales,<br />en el mundo real.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>App</h4>
+            <a href="#">Descargar</a>
+            <a href="#">Cómo funciona</a>
+            <a href="#">Funciones</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="#">Términos de uso</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Cookies</a>
+          </div>
+          <div class="footer-col">
+            <h4>Contacto</h4>
+            <a href="#">Soporte</a>
+            <a href="#">Reportar bug</a>
+            <a href="#">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Nearby. Hecho con 💚 en Argentina.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
