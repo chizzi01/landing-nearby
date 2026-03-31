@@ -47,6 +47,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 const screens = [
   'images/screen-radar.jpg',
   'images/screen-profile.jpg',
+  'images/screen-evento.jpg',
   'images/screen-matches.jpg',
   'images/screen-likes.jpg'
 ];
