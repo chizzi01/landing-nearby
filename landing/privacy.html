@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — Nearby</title>
+  <meta name="description"
+    content="Política de Privacidad de Nearby. Conocé cómo recopilamos, usamos y protegemos tu información personal." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ─── LEGAL PAGE STYLES ─── */
+    .legal-hero {
+      padding: 140px 0 60px;
+      background: linear-gradient(180deg, var(--bg3) 0%, var(--bg) 100%);
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+    }
+    .legal-hero .legal-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(112, 201, 161, .1);
+      border: 1px solid rgba(112, 201, 161, .25);
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+    }
+    .legal-hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .legal-hero p {
+      color: var(--muted);
+      font-size: 15px;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    /* ─── LEGAL BODY ─── */
+    .legal-body {
+      padding: 64px 0 96px;
+    }
+    .legal-layout {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    /* Sticky TOC */
+    .legal-toc {
+      position: sticky;
+      top: 100px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+    }
+    .legal-toc h3 {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+    .legal-toc ol {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .legal-toc ol li a {
+      display: block;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 6px 10px;
+      border-radius: 8px;
+      transition: all .2s;
+      line-height: 1.4;
+    }
+    .legal-toc ol li a:hover {
+      color: var(--green);
+      background: rgba(112, 201, 161, .08);
+    }
+
+    /* Content */
+    .legal-content {
+      min-width: 0;
+    }
+    .legal-section {
+      margin-bottom: 40px;
+      scroll-margin-top: 100px;
+    }
+    .legal-section h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .legal-section h2 .section-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: rgba(112, 201, 161, .12);
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .legal-section p {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+    .legal-section p:last-child {
+      margin-bottom: 0;
+    }
+    .legal-section ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin: 12px 0;
+    }
+    .legal-section ul li {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.7;
+      padding-left: 20px;
+      position: relative;
+    }
+    .legal-section ul li::before {
+      content: "–";
+      position: absolute;
+      left: 0;
+      color: var(--green);
+    }
+
+    /* Info box */
+    .legal-info-box {
+      background: rgba(112, 201, 161, .07);
+      border: 1px solid rgba(112, 201, 161, .2);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      margin-top: 16px;
+    }
+    .legal-info-box p {
+      margin-bottom: 0 !important;
+      font-size: 14px !important;
+    }
+
+    /* Back link */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--green);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 32px;
+      transition: gap .2s;
+    }
+    .back-link:hover { gap: 12px; }
+
+    /* Responsive */
+    @media (max-width: 860px) {
+      .legal-layout {
+        grid-template-columns: 1fr;
+      }
+      .legal-toc {
+        position: static;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ─── NAV ─── -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Nearby" class="nav-logo-img" />
+      </a>
+      <div class="nav-links">
+        <a href="index.html#como-funciona">Cómo funciona</a>
+        <a href="index.html#features">Funciones</a>
+        <a href="index.html#eventos">Eventos</a>
+        <a href="index.html#descargar" class="btn btn-sm">Descargar</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section class="legal-hero">
+    <div class="container">
+      <div class="legal-badge">🔒 Legal</div>
+      <h1>Política de <span class="gradient-text">Privacidad</span></h1>
+      <p>Última actualización: 1 de abril de 2025</p>
+    </div>
+  </section>
+
+  <!-- ─── BODY ─── -->
+  <section class="legal-body">
+    <div class="container">
+
+      <div class="legal-layout">
+
+        <!-- Table of Contents -->
+        <aside class="legal-toc">
+          <h3>Contenido</h3>
+          <ol>
+            <li><a href="#s1">1. Responsable del tratamiento</a></li>
+            <li><a href="#s2">2. Datos que recopilamos</a></li>
+            <li><a href="#s3">3. Finalidad del tratamiento</a></li>
+            <li><a href="#s4">4. Datos de ubicación</a></li>
+            <li><a href="#s5">5. Compartición de datos</a></li>
+            <li><a href="#s6">6. Retención de datos</a></li>
+            <li><a href="#s7">7. Seguridad</a></li>
+            <li><a href="#s8">8. Menores de edad</a></li>
+            <li><a href="#s9">9. Tus derechos</a></li>
+            <li><a href="#s10">10. Cookies</a></li>
+            <li><a href="#s11">11. Cambios en la política</a></li>
+            <li><a href="#s12">12. Contacto</a></li>
+          </ol>
+        </aside>
+
+        <!-- Content -->
+        <div class="legal-content">
+
+          <a href="index.html" class="back-link">
+            ← Volver al inicio
+          </a>
+
+          <div class="legal-section" id="s1">
+            <h2><span class="section-num">1</span> Responsable del tratamiento</h2>
+            <p>
+              Nearby ("la Aplicación", "nosotros") es responsable del tratamiento de los datos personales que se
+              recopilan a través de la plataforma. Al usar Nearby, aceptás el tratamiento de tu información de acuerdo
+              con esta Política de Privacidad.
+            </p>
+            <p>
+              Para cualquier consulta relacionada con la privacidad de tus datos, podés contactarnos a través de la
+              sección <strong>Soporte</strong> dentro de la Aplicación.
+            </p>
+          </div>
+
+          <div class="legal-section" id="s2">
+            <h2><span class="section-num">2</span> Datos que recopilamos</h2>
+            <p>Recopilamos los siguientes tipos de información:</p>
+            <ul>
+              <li><strong>Datos de cuenta:</strong> nombre, dirección de correo electrónico, número de teléfono, fecha
+                de nacimiento y contraseña (almacenada de forma encriptada).</li>
+              <li><strong>Datos de perfil:</strong> fotos, descripción personal, género, intereses y preferencias de
+                búsqueda.</li>
+              <li><strong>Datos de ubicación:</strong> ubicación geográfica en tiempo real cuando la función radar está
+                activa (ver sección 4).</li>
+              <li><strong>Datos de uso:</strong> interacciones dentro de la app (likes, matches, mensajes), tiempo de
+                sesión y funciones utilizadas.</li>
+              <li><strong>Datos del dispositivo:</strong> modelo, sistema operativo, identificador de notificaciones
+                push y dirección IP.</li>
+              <li><strong>Comunicaciones:</strong> mensajes de soporte que nos enviás a través de la app.</li>
+            </ul>
+          </div>
+
+          <div class="legal-section" id="s3">
+            <h2><span class="section-num">3</span> Finalidad del tratamiento</h2>
+            <p>Usamos tu información para:</p>
+            <ul>
+              <li>Crear y gestionar tu cuenta de usuario.</li>
+              <li>Mostrarte perfiles de personas cercanas en el radar.</li>
+              <li>Procesar likes, matches y habilitar el sistema de mensajería.</li>
+              <li>Enviarte notificaciones push sobre nuevos matches, mensajes y eventos.</li>
+              <li>Permitirte crear y unirte a eventos locales.</li>
+              <li>Brindarte soporte técnico y atender tus consultas.</li>
+              <li>Detectar y prevenir actividad fraudulenta o violaciones de nuestros Términos y Condiciones.</li>
+              <li>Mejorar el servicio mediante análisis de uso agregado y anonimizado.</li>
+            </ul>
+          </div>
+
+          <div class="legal-section" id="s4">
+            <h2><span class="section-num">4</span> Datos de ubicación</h2>
+            <p>
+              La ubicación es la función central de Nearby. Cuando activás el radar, tu posición geográfica se utiliza
+              para calcular tu distancia respecto a otros usuarios activos. <strong>Nunca compartimos tu ubicación
+              exacta</strong> con otros usuarios: solo mostramos la distancia aproximada (por ejemplo, "a 300m").
+            </p>
+            <p>
+              Tu ubicación solo se procesa cuando:
+            </p>
+            <ul>
+              <li>El radar está activo y te mostrás de forma visible en la app.</li>
+              <li>Participás de un evento y el sistema calcula tu proximidad al mismo.</li>
+            </ul>
+            <p>
+              Podés desactivar el radar en cualquier momento desde la pantalla principal. Al hacerlo, dejás de ser
+              visible para otros usuarios y dejamos de procesar tu ubicación. También podés revocar el permiso de
+              ubicación desde la configuración de tu dispositivo.
+            </p>
+            <div class="legal-info-box">
+              <p>💡 <strong>Sin rastreo en segundo plano.</strong> Nearby no accede a tu ubicación cuando la app está
+                cerrada o en segundo plano.</p>
+            </div>
+          </div>
+
+          <div class="legal-section" id="s5">
+            <h2><span class="section-num">5</span> Compartición de datos</h2>
+            <p>
+              No vendemos ni alquilamos tus datos personales a terceros. Podemos compartir información en los siguientes
+              casos:
+            </p>
+            <ul>
+              <li><strong>Proveedores de servicios:</strong> empresas que nos ayudan a operar la plataforma (servidores,
+                envío de SMS y emails, notificaciones push). Estos proveedores solo acceden a los datos necesarios para
+                prestar sus servicios y están obligados a mantener la confidencialidad.</li>
+              <li><strong>Obligaciones legales:</strong> si una autoridad competente lo requiere mediante orden judicial
+                o proceso legal válido.</li>
+              <li><strong>Protección de derechos:</strong> cuando sea necesario para proteger los derechos, la
+                propiedad o la seguridad de Nearby, sus usuarios u otras personas.</li>
+            </ul>
+          </div>
+
+          <div class="legal-section" id="s6">
+            <h2><span class="section-num">6</span> Retención de datos</h2>
+            <p>
+              Conservamos tus datos personales mientras tu cuenta esté activa. Si eliminás tu cuenta, tus datos serán
+              borrados de nuestros sistemas activos en un plazo máximo de <strong>30 días</strong>, salvo que la ley
+              exija una retención mayor.
+            </p>
+            <p>
+              Los mensajes intercambiados con otros usuarios se eliminan junto con la cuenta. Las copias de seguridad
+              encriptadas pueden conservarse por un período adicional antes de ser sobreescritas.
+            </p>
+          </div>
+
+          <div class="legal-section" id="s7">
+            <h2><span class="section-num">7</span> Seguridad</h2>
+            <p>
+              Implementamos medidas técnicas y organizativas para proteger tu información frente a accesos no
+              autorizados, pérdida, alteración o divulgación:
+            </p>
+            <ul>
+              <li>Transmisión de datos cifrada mediante HTTPS/TLS.</li>
+              <li>Contraseñas almacenadas con hashing seguro (bcrypt).</li>
+              <li>Tokens de sesión con tiempo de expiración.</li>
+              <li>Acceso restringido a los datos por parte del equipo interno.</li>
+              <li>Infraestructura alojada en proveedores con certificaciones de seguridad.</li>
+            </ul>
+            <p>
+              Ningún sistema es 100% seguro. Si detectás un incidente de seguridad, notificanos de inmediato a través
+              del soporte en la app.
+            </p>
+          </div>
+
+          <div class="legal-section" id="s8">
+            <h2><span class="section-num">8</span> Menores de edad</h2>
+            <p>
+              Nearby está destinada exclusivamente a personas mayores de 18 años. No recopilamos intencionalmente datos
+              de menores. Si tenés conocimiento de que un menor está usando la plataforma, contactanos para que podamos
+              tomar las medidas correspondientes.
+            </p>
+          </div>
+
+          <div class="legal-section" id="s9">
+            <h2><span class="section-num">9</span> Tus derechos</h2>
+            <p>Podés ejercer los siguientes derechos respecto a tus datos personales:</p>
+            <ul>
+              <li><strong>Acceso:</strong> conocer qué datos tenemos sobre vos.</li>
+              <li><strong>Rectificación:</strong> corregir datos inexactos o incompletos desde tu perfil.</li>
+              <li><strong>Eliminación:</strong> solicitar la baja de tu cuenta y el borrado de tus datos desde
+                Configuración → Cuenta → Dar de baja mi cuenta.</li>
+              <li><strong>Portabilidad:</strong> solicitar una copia de tus datos en formato estructurado.</li>
+              <li><strong>Oposición:</strong> oponerte al tratamiento en casos específicos previstos por la ley.</li>
+            </ul>
+            <p>
+              Para ejercer cualquiera de estos derechos, contactanos a través de la sección Soporte dentro de la app.
+              Responderemos tu solicitud en un plazo máximo de 30 días hábiles.
+            </p>
+          </div>
+
+          <div class="legal-section" id="s10">
+            <h2><span class="section-num">10</span> Cookies</h2>
+            <p>
+              La Aplicación móvil no utiliza cookies. Si accedés al sitio web de Nearby (esta landing page), podemos
+              usar cookies técnicas estrictamente necesarias para el funcionamiento del sitio (por ejemplo, preferencias
+              de idioma). No utilizamos cookies de seguimiento ni publicitarias de terceros.
+            </p>
+          </div>
+
+          <div class="legal-section" id="s11">
+            <h2><span class="section-num">11</span> Cambios en la política</h2>
+            <p>
+              Podemos actualizar esta Política de Privacidad para reflejar cambios en el servicio o en la legislación
+              aplicable. Notificaremos los cambios significativos mediante un aviso dentro de la Aplicación o por
+              correo electrónico. La fecha de "última actualización" al inicio de este documento refleja la versión
+              vigente.
+            </p>
+            <p>
+              El uso continuado de la Aplicación tras la notificación implica la aceptación de la política actualizada.
+            </p>
+          </div>
+
+          <div class="legal-section" id="s12">
+            <h2><span class="section-num">12</span> Contacto</h2>
+            <p>
+              Si tenés consultas, inquietudes o querés ejercer tus derechos sobre tus datos personales, contactanos
+              desde la sección <strong>Soporte</strong> dentro de la Aplicación o a través de nuestros canales
+              oficiales.
+            </p>
+            <div class="legal-info-box">
+              <p>📬 También podés escribirnos directamente desde <strong>Configuración → Soporte</strong> en la app
+                para una respuesta más rápida.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="Nearby" class="footer-logo" />
+          <p>Conectá con personas reales,<br />en el mundo real.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>App</h4>
+            <a href="index.html">Inicio</a>
+            <a href="index.html#como-funciona">Cómo funciona</a>
+            <a href="index.html#features">Funciones</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="terms.html">Términos de uso</a>
+            <a href="privacy.html" style="color: var(--green);">Privacidad</a>
+            <a href="#">Cookies</a>
+          </div>
+          <div class="footer-col">
+            <h4>Contacto</h4>
+            <a href="#">Soporte</a>
+            <a href="#">Reportar bug</a>
+            <a href="#">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Nearby. Hecho con 💚 en Argentina.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Nav scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    });
+  </script>
+
+</body>
+
+</html>

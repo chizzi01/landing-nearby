@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Términos de Uso — Nearby</title>
+  <meta name="description"
+    content="Términos y Condiciones de uso de Nearby. Leé las condiciones que rigen el uso de la plataforma." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ─── LEGAL PAGE STYLES ─── */
+    .legal-hero {
+      padding: 140px 0 60px;
+      background: linear-gradient(180deg, var(--bg3) 0%, var(--bg) 100%);
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+    }
+    .legal-hero .legal-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(112, 201, 161, .1);
+      border: 1px solid rgba(112, 201, 161, .25);
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+    }
+    .legal-hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .legal-hero p {
+      color: var(--muted);
+      font-size: 15px;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    /* ─── LEGAL BODY ─── */
+    .legal-body {
+      padding: 64px 0 96px;
+    }
+    .legal-layout {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    /* Sticky TOC */
+    .legal-toc {
+      position: sticky;
+      top: 100px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+    }
+    .legal-toc h3 {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+    .legal-toc ol {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .legal-toc ol li a {
+      display: block;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 6px 10px;
+      border-radius: 8px;
+      transition: all .2s;
+      line-height: 1.4;
+    }
+    .legal-toc ol li a:hover {
+      color: var(--green);
+      background: rgba(112, 201, 161, .08);
+    }
+
+    /* Content */
+    .legal-content {
+      min-width: 0;
+    }
+    .legal-section {
+      margin-bottom: 40px;
+      scroll-margin-top: 100px;
+    }
+    .legal-section h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .legal-section h2 .section-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: rgba(112, 201, 161, .12);
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .legal-section p {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+    .legal-section p:last-child {
+      margin-bottom: 0;
+    }
+    .legal-section ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin: 12px 0;
+    }
+    .legal-section ul li {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.7;
+      padding-left: 20px;
+      position: relative;
+    }
+    .legal-section ul li::before {
+      content: "–";
+      position: absolute;
+      left: 0;
+      color: var(--green);
+    }
+
+    /* Info box */
+    .legal-info-box {
+      background: rgba(112, 201, 161, .07);
+      border: 1px solid rgba(112, 201, 161, .2);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      margin-top: 16px;
+    }
+    .legal-info-box p {
+      margin-bottom: 0 !important;
+      font-size: 14px !important;
+    }
+
+    /* Warning box */
+    .legal-warn-box {
+      background: rgba(201, 112, 112, .07);
+      border: 1px solid rgba(201, 112, 112, .2);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      margin-top: 16px;
+    }
+    .legal-warn-box p {
+      margin-bottom: 0 !important;
+      font-size: 14px !important;
+      color: #d4a0a0 !important;
+    }
+
+    /* Back link */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--green);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 32px;
+      transition: gap .2s;
+    }
+    .back-link:hover { gap: 12px; }
+
+    /* Responsive */
+    @media (max-width: 860px) {
+      .legal-layout {
+        grid-template-columns: 1fr;
+      }
+      .legal-toc {
+        position: static;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ─── NAV ─── -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Nearby" class="nav-logo-img" />
+      </a>
+      <div class="nav-links">
+        <a href="index.html#como-funciona">Cómo funciona</a>
+        <a href="index.html#features">Funciones</a>
+        <a href="index.html#eventos">Eventos</a>
+        <a href="index.html#descargar" class="btn btn-sm">Descargar</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section class="legal-hero">
+    <div class="container">
+      <div class="legal-badge">📄 Legal</div>
+      <h1>Términos de <span class="gradient-text">Uso</span></h1>
+      <p>Última actualización: 1 de abril de 2025</p>
+    </div>
+  </section>
+
+  <!-- ─── BODY ─── -->
+  <section class="legal-body">
+    <div class="container">
+
+      <div class="legal-layout">
+
+        <!-- Table of Contents -->
+        <aside class="legal-toc">
+          <h3>Contenido</h3>
+          <ol>
+            <li><a href="#s1">1. Aceptación de los términos</a></li>
+            <li><a href="#s2">2. Descripción del servicio</a></li>
+            <li><a href="#s3">3. Elegibilidad</a></li>
+            <li><a href="#s4">4. Cuenta de usuario</a></li>
+            <li><a href="#s5">5. Conducta del usuario</a></li>
+            <li><a href="#s6">6. Contenido del usuario</a></li>
+            <li><a href="#s7">7. Privacidad y ubicación</a></li>
+            <li><a href="#s8">8. Pagos y suscripciones</a></li>
+            <li><a href="#s9">9. Propiedad intelectual</a></li>
+            <li><a href="#s10">10. Limitación de responsabilidad</a></li>
+            <li><a href="#s11">11. Modificaciones del servicio</a></li>
+            <li><a href="#s12">12. Cancelación y terminación</a></li>
+            <li><a href="#s13">13. Ley aplicable</a></li>
+            <li><a href="#s14">14. Contacto</a></li>
+          </ol>
+        </aside>
+
+        <!-- Content -->
+        <div class="legal-content">
+
+          <a href="index.html" class="back-link">
+            ← Volver al inicio
+          </a>
+
+          <div class="legal-section" id="s1">
+            <h2><span class="section-num">1</span> Aceptación de los términos</h2>
+            <p>
+              Al acceder o utilizar Nearby ("la Aplicación", "el servicio"), aceptás estos Términos de Uso en su
+              totalidad. Si no estás de acuerdo con alguna de estas condiciones, no uses la Aplicación.
+            </p>
+            <p>
+              El uso continuado de la Aplicación tras cualquier modificación implica la aceptación de los términos
+              actualizados. Estos Términos constituyen un acuerdo legalmente vinculante entre vos y Nearby.
+            </p>
+          </div>
+
+          <div class="legal-section" id="s2">
+            <h2><span class="section-num">2</span> Descripción del servicio</h2>
+            <p>
+              Nearby es una plataforma social móvil que conecta personas que se encuentran físicamente cerca mediante
+              un radar de ubicación en tiempo real. El servicio incluye:
+            </p>
+            <ul>
+              <li>Exploración de perfiles de usuarios cercanos mediante el radar.</li>
+              <li>Sistema de likes y matches mutuos.</li>
+              <li>Mensajería directa entre usuarios con match.</li>
+              <li>Creación y participación en eventos locales.</li>
+              <li>Funciones premium opcionales mediante suscripción.</li>
+            </ul>
+            <p>
+              Nearby se reserva el derecho de modificar, ampliar o discontinuar cualquier función del servicio en
+              cualquier momento, con o sin previo aviso.
+            </p>
+          </div>
+
+          <div class="legal-section" id="s3">
+            <h2><span class="section-num">3</span> Elegibilidad</h2>
+            <p>
+              Para usar Nearby debés tener al menos <strong>18 años de edad</strong>. Al registrarte, declarás y
+              garantizás que:
+            </p>
+            <ul>
+              <li>Tenés la edad legal requerida en tu jurisdicción.</li>
+              <li>Toda la información que proporcionás es verdadera, exacta y completa.</li>
+              <li>No fuiste previamente suspendido o expulsado de la plataforma.</li>
+              <li>No estás registrado como agresor sexual ni tenés prohibiciones legales para usar servicios de este
+                tipo.</li>
+            </ul>
+            <div class="legal-warn-box">
+              <p>⚠️ Nearby puede suspender o eliminar permanentemente cualquier cuenta que no cumpla con los requisitos
+                de elegibilidad.</p>
+            </div>
+          </div>
+
+          <div class="legal-section" id="s4">
+            <h2><span class="section-num">4</span> Cuenta de usuario</h2>
+            <p>
+              Al registrarte, creás una cuenta personal e intransferible. Sos responsable de:
+            </p>
+            <ul>
+              <li>Mantener la confidencialidad de tus credenciales de acceso.</li>
+              <li>Todas las actividades realizadas con tu cuenta.</li>
+              <li>Notificar a Nearby de inmediato ante cualquier acceso no autorizado.</li>
+            </ul>
+            <p>
+              No podés crear más de una cuenta personal. No podés transferir, vender ni ceder tu cuenta a terceros.
+              Nearby no será responsable por daños derivados del incumplimiento de estas obligaciones.
+            </p>
+          </div>
+
+          <div class="legal-section" id="s5">
+            <h2><span class="section-num">5</span> Conducta del usuario</h2>
+            <p>
+              Al usar Nearby te comprometés a no realizar ninguna de las siguientes conductas:
+            </p>
+            <ul>
+              <li>Publicar contenido falso, engañoso, difamatorio, obsceno, violento o ilegal.</li>
+              <li>Acosar, amenazar, intimidar o discriminar a otros usuarios.</li>
+              <li>Suplantar la identidad de personas físicas, empresas u otras entidades.</li>
+              <li>Compartir información personal de terceros sin su consentimiento.</li>
+              <li>Realizar actividades comerciales, publicidad o spam no autorizado.</li>
+              <li>Intentar acceder a cuentas ajenas o vulnerar la seguridad de la plataforma.</li>
+              <li>Usar bots, scrapers u otros medios automatizados para interactuar con el servicio.</li>
+              <li>Distribuir malware, virus o cualquier código dañino.</li>
+              <li>Usar la plataforma para actividades ilegales de cualquier tipo.</li>
+            </ul>
+            <p>
+              Nearby puede suspender o eliminar cuentas que violen estas normas, sin previo aviso y sin obligación de
+              reembolso.
+            </p>
+          </div>
+
+          <div class="legal-section" id="s6">
+            <h2><span class="section-num">6</span> Contenido del usuario</h2>
+            <p>
+              Al subir fotos, textos, descripciones u otro contenido ("Contenido") a Nearby, declarás que:
+            </p>
+            <ul>
+              <li>Sos el titular o tenés los derechos necesarios para publicar dicho Contenido.</li>
+              <li>El Contenido no infringe derechos de terceros ni la legislación vigente.</li>
+              <li>El Contenido es verdadero y te representa fielmente.</li>
+            </ul>
+            <p>
+              Al publicar Contenido otorgás a Nearby una licencia mundial, no exclusiva, libre de regalías para usar,
+              reproducir, modificar y mostrar dicho Contenido únicamente con el fin de operar y mejorar el servicio.
+              Esta licencia finaliza cuando eliminás el Contenido o tu cuenta.
+            </p>
+            <p>
+              Sos el único responsable del Contenido que publiques. Nearby no realiza verificación previa de contenidos
+              pero puede moderarlos y eliminarlos ante denuncias o detección de violaciones.
+            </p>
+          </div>
+
+          <div class="legal-section" id="s7">
+            <h2><span class="section-num">7</span> Privacidad y ubicación</h2>
+            <p>
+              El uso de la Aplicación está también sujeto a nuestra
+              <a href="privacy.html" style="color: var(--green); text-decoration: none; font-weight: 600;">Política de
+                Privacidad</a>, que se incorpora a estos Términos por referencia.
+            </p>
+            <p>
+              Nearby requiere acceso a tu ubicación geográfica para mostrar personas y eventos cercanos. Al activar el
+              radar, aceptás que tu posición sea procesada conforme a la Política de Privacidad. Podés revocar este
+              permiso en cualquier momento desde la configuración de tu dispositivo, aunque esto limitará las
+              funcionalidades del servicio.
+            </p>
+            <div class="legal-info-box">
+              <p>🔒 Tu ubicación exacta nunca es visible para otros usuarios. Solo mostramos la distancia aproximada.
+              </p>
+            </div>
+          </div>
+
+          <div class="legal-section" id="s8">
+            <h2><span class="section-num">8</span> Pagos y suscripciones</h2>
+            <p>
+              Nearby puede ofrecer funciones premium mediante suscripción paga. En caso de aplicar:
+            </p>
+            <ul>
+              <li>Los cargos se procesan a través de la tienda de aplicaciones correspondiente (App Store de Apple o
+                Google Play Store).</li>
+              <li>Los precios están sujetos a cambio con previo aviso.</li>
+              <li>Las suscripciones se renuevan automáticamente al final de cada período salvo que se cancelen al menos
+                24 horas antes de la renovación.</li>
+              <li>Los reembolsos se rigen por las políticas de la tienda desde donde se realizó la compra.</li>
+            </ul>
+            <p>
+              Nearby no procesa pagos directamente y no almacena datos de tarjetas de crédito.
+            </p>
+          </div>
+
+          <div class="legal-section" id="s9">
+            <h2><span class="section-num">9</span> Propiedad intelectual</h2>
+            <p>
+              Todos los derechos sobre la marca, el diseño, el código fuente, los textos y los elementos visuales de
+              Nearby son propiedad exclusiva de sus titulares. Queda prohibido:
+            </p>
+            <ul>
+              <li>Reproducir, modificar o distribuir cualquier elemento de la plataforma sin autorización expresa.</li>
+              <li>Usar la marca o el nombre "Nearby" sin consentimiento previo por escrito.</li>
+              <li>Aplicar ingeniería inversa o intentar extraer el código fuente de la Aplicación.</li>
+            </ul>
+            <p>
+              Los derechos sobre el Contenido publicado por los usuarios (fotos, textos) pertenecen a sus respectivos
+              autores conforme a lo indicado en la sección 6.
+            </p>
+          </div>
+
+          <div class="legal-section" id="s10">
+            <h2><span class="section-num">10</span> Limitación de responsabilidad</h2>
+            <p>
+              Nearby se provee "tal como está" y "según disponibilidad", sin garantías de ningún tipo, expresas o
+              implícitas. En la máxima medida permitida por la ley aplicable, Nearby no será responsable por:
+            </p>
+            <ul>
+              <li>Daños indirectos, incidentales, especiales o consecuentes derivados del uso o la imposibilidad de uso
+                del servicio.</li>
+              <li>Conductas, contenidos o acciones de otros usuarios de la plataforma.</li>
+              <li>Interrupciones, errores o pérdida de datos del servicio.</li>
+              <li>Encuentros o interacciones en el mundo real entre usuarios.</li>
+            </ul>
+            <div class="legal-warn-box">
+              <p>⚠️ Nearby es una plataforma de conexión. No nos hacemos responsables por lo que ocurra en encuentros
+                físicos entre usuarios. Siempre tomá precauciones al conocer personas en persona.</p>
+            </div>
+          </div>
+
+          <div class="legal-section" id="s11">
+            <h2><span class="section-num">11</span> Modificaciones del servicio</h2>
+            <p>
+              Nearby puede modificar estos Términos en cualquier momento. Notificaremos los cambios significativos
+              mediante un aviso dentro de la Aplicación o por correo electrónico al menos 7 días antes de que entren
+              en vigencia.
+            </p>
+            <p>
+              El uso continuado de la Aplicación tras la fecha de entrada en vigencia implica la aceptación de los
+              Términos modificados. Si no aceptás los cambios, podés eliminar tu cuenta antes de la fecha indicada.
+            </p>
+          </div>
+
+          <div class="legal-section" id="s12">
+            <h2><span class="section-num">12</span> Cancelación y terminación</h2>
+            <p>
+              Podés dar de baja tu cuenta en cualquier momento desde
+              <strong>Configuración → Cuenta → Dar de baja mi cuenta</strong>. La eliminación es permanente y borrará
+              todos tus datos conforme a la Política de Privacidad.
+            </p>
+            <p>
+              Nearby puede suspender o cancelar tu acceso, con o sin previo aviso, ante:
+            </p>
+            <ul>
+              <li>Violaciones de estos Términos de Uso.</li>
+              <li>Conductas que perjudiquen a otros usuarios o a la plataforma.</li>
+              <li>Requerimientos legales o regulatorios.</li>
+              <li>Inactividad prolongada de la cuenta.</li>
+            </ul>
+            <p>
+              La cancelación de la cuenta no genera derecho a reembolso de suscripciones activas salvo lo dispuesto
+              por la tienda correspondiente.
+            </p>
+          </div>
+
+          <div class="legal-section" id="s13">
+            <h2><span class="section-num">13</span> Ley aplicable</h2>
+            <p>
+              Estos Términos se rigen por las leyes de la <strong>República Argentina</strong>. Cualquier disputa
+              derivada del uso de la plataforma será sometida a la jurisdicción exclusiva de los tribunales ordinarios
+              de la <strong>Ciudad Autónoma de Buenos Aires</strong>, renunciando las partes a cualquier otro fuero
+              que pudiera corresponder.
+            </p>
+          </div>
+
+          <div class="legal-section" id="s14">
+            <h2><span class="section-num">14</span> Contacto</h2>
+            <p>
+              Para consultas o reclamos sobre estos Términos, contactanos a través de la sección
+              <strong>Soporte</strong> dentro de la Aplicación.
+            </p>
+            <div class="legal-info-box">
+              <p>📬 Podés escribirnos desde <strong>Configuración → Soporte</strong> en la app para una respuesta más
+                rápida.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="Nearby" class="footer-logo" />
+          <p>Conectá con personas reales,<br />en el mundo real.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>App</h4>
+            <a href="index.html">Inicio</a>
+            <a href="index.html#como-funciona">Cómo funciona</a>
+            <a href="index.html#features">Funciones</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="terms.html" style="color: var(--green);">Términos de uso</a>
+            <a href="privacy.html">Privacidad</a>
+            <a href="#">Cookies</a>
+          </div>
+          <div class="footer-col">
+            <h4>Contacto</h4>
+            <a href="#">Soporte</a>
+            <a href="#">Reportar bug</a>
+            <a href="#">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Nearby. Hecho con 💚 en Argentina.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Nav scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    });
+  </script>
+
+</body>
+
+</html>
